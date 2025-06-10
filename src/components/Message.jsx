@@ -10,7 +10,7 @@ function Message({ text, sender }) {
       <div
         className={`max-w-xs lg:max-w-md px-4 py-2 rounded-2xl ${
           sender === "user"
-            ? "bg-purple-600 text-white"
+            ? "bg-purple-300 text-white"
             : "bg-gray-100 text-gray-800"
         }`}
       >

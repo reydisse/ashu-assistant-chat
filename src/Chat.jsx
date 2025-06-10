@@ -225,7 +225,7 @@ function Chat() {
     <div className='w-80 bg-white border-r border-gray-200 flex flex-col'>
       <div className='p-6 border-b border-gray-200'>
         <div className='flex items-center space-x-3 mb-4'>
-          <div className='w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center'>
+          <div className='w-8 h-8 bg-purple-300 rounded-lg flex items-center justify-center'>
             <span className='text-white font-bold text-sm'>A</span>
           </div>
           <h1 className='text-lg font-semibold text-gray-900'>
@@ -279,7 +279,7 @@ function Chat() {
             <button
               onClick={handleSend}
               disabled={!input.trim() || isLoading}
-              className='absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed'
+              className='absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-300 rounded-lg flex items-center justify-center hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed'
             >
               {isLoading ? (
                 <div className='w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
