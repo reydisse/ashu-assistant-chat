@@ -95,7 +95,7 @@ function Chat() {
       console.error("Error sending message:", error);
       setError(error.message);
 
-      // Add error message for user feedback
+      // error message for user feedback
       const errorMessage = {
         text: "Sorry, I'm having trouble connecting right now. Please try again.",
         sender: "assistant",
@@ -203,7 +203,7 @@ function Chat() {
   );
 
   const renderChatMessages = () => (
-    <div className='flex-1 overflow-y-auto p-6'>
+    <div className='flex-1 overflow-y-auto p-6 text-left'>
       <div className='max-w-4xl mx-auto'>
         {messages.map((msg, index) => (
           <Message key={index} text={msg.text} sender={msg.sender} />
@@ -235,8 +235,8 @@ function Chat() {
       </div>
 
       <div className='flex-1 overflow-y-auto'>
-        <div className='p-4'>
-          <div className='flex items-center justify-between mb-4'>
+        <div className='p-4 text-left'>
+          <div className='flex items-left justify-between mb-4'>
             <h2 className='text-sm font-medium text-gray-700'>
               Chat History ({chatHistory.length.toString().padStart(2, "0")})
             </h2>
